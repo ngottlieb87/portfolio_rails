@@ -7,8 +7,16 @@
   <div class="displaycomment">
     <% if @project.comments.any? %>
        <% @project.comments.each do |comment| %>
+       <p><%= comment.body %> <p>
        comment by: <%= comment.user.user_name %>
       <hr>
+      <p> <% if is_admin? %>
+      <p class="admin"><%= link_to "Edit Comment", edit_project_comment_path(comment)%></p>
+      <p class= "admin"><%= link_to "Delete Comment",project_path(comment),
+                               :data => {:confirm => "You sure?",
+                                         :method => "delete"} %>
+          <%end %>
+      </p>
     <% end %>
     <% else %>
       <p>There are no comments yet for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
@@ -16,11 +24,4 @@
   </div>
   <p id= "returnProj"><%= link_to "Return to projects", projects_path %></p>
   <hr>
-  <p> <% if is_admin? %>
-  <p class="admin"><%= link_to "Admin project Edit", edit_project_path(@project)%></p>
-  <p class= "admin"><%= link_to "Admin project Delete", project_path(@project),
-                           :data => {:confirm => "You sure?",
-                                     :method => "delete"} %>
-      <%end %>
-  </p>
 </div>

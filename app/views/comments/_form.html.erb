@@ -1,6 +1,6 @@
 <%= render "layouts/errors", :object => @comment %>
 
-<%= form_for [@question, @response, @comment] do |f| %>
+<%= form_for [@project, @comment] do |f| %>
   <%= f.label :body %><br>
   <%= f.text_area :body %><br>
   <%= f.hidden_field(:user_id, :value => current_user.id) %>

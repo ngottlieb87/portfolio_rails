@@ -6,7 +6,7 @@
       <h3>project:</h3>
       <p><%= link_to project.title, project_path(project) %></p>
       <p><% if is_admin? %>
-      <%= link_to "Edit", edit_project_path(project) %> |
+      <%= link_to "Edit Comment", edit_project_path(project) %> |
       <%= link_to "Delete", project_path(project),
         :data=>{:confirm => "Are You Sure?", :method => "delete"}%>
       <% end %></p>

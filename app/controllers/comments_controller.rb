@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   before_action :authorize, only: [:new, :create]
-
+  before_action :authorize_admin, only: [:edit, :update, :destroy]
   def new
     @project = Project.find(params[:project_id])
     @comment = @project.comments.new
@@ -17,6 +17,22 @@ class CommentsController < ApplicationController
     end
   end
 
+  def edit
+    @project = Project.find(params[:project_id])
+    @comment = Comment.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:project_id])
+    @comment = Comment.find(params[:id])
+    if @comment.update(comment_params)
+      flash[:notice] = "Comment Updated"
+      redirect_to project_comments_path
+    else
+      render :edit
+    end
+  end
+
   def destroy
     @comment = comment.find(params[:id])
     @comment.destroy
@@ -26,6 +42,6 @@ class CommentsController < ApplicationController
 
   private
     def comment_params
-      params.require(:comment).permit(:body, :project_id)
+      params.require(:comment).permit(:body, :user_id)
     end
 end

@@ -5,14 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Project.destroy_all
 User.destroy_all
+Project.destroy_all
 user_list = [
-  ["n@n.com", "noah", true, "$2a$10$EQBl12kTokjEGpkM2NAm7OPfY.JYjMj9us.qvqa81MnXJGsgBhw6a", "$2a$10$EQBl12kTokjEGpkM2NAm7O"]
+  ["n@n.com", "noah", true, "$2a$10$rnnIr3GrAveEXOrABRYpl.ENXYZLCheXapyEfHiGopcy9miW9EfBm" ,  "$2a$10$rnnIr3GrAveEXOrABRYpl."]
 ]
 
-user_list.each do |email, name, password, salt|
-  User.create!(email: email, user_name: name, password_hash: password, password_salt: salt)
+user_list.each do |email, name, admin, password, salt|
+  User.create!(email: email, user_name: name, admin: admin, password_hash: password, password_salt: salt)
 end
 
 p "Created #{User.count} users"

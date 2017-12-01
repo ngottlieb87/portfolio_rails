@@ -3,6 +3,7 @@
   <h1 class="projectName"><%= @project.title %></h1>
   <div class="card">
      <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
+     <h3><%= link_to "Add a comment for this project!", new_project_comment_path(@project)%></h3>
   </div>
   <div class="displaycomment">
     <% if @project.comments.any? %>

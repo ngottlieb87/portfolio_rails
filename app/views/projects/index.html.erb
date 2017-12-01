@@ -1,0 +1,23 @@
+<h3>Noah's Projects:</h3>
+<% if @projects.any? %>
+<% @projects.each do |project| %>
+  <div class='card'>
+    <div class='card-body'>
+      <h3>project:</h3>
+      <p><%= link_to project.title, project_path(project) %></p>
+      <p><% if is_admin? %>
+      <%= link_to "Edit", edit_project_path(project) %> |
+      <%= link_to "Delete", project_path(project),
+        :data=>{:confirm => "Are You Sure?", :method => "delete"}%>
+      <% end %></p>
+    </div>
+  </div>
+
+<% end %>
+<% else %>
+<div class= 'card'>
+  <div class = 'card-body'>
+    <p> There are currently no projects listed. Please visit <span><a href="https://www.github.com/ngottlieb87">my github</a></span>!</p>
+  </div>
+<% end %>
+</div>

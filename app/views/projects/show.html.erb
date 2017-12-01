@@ -16,8 +16,11 @@
   </div>
   <p id= "returnProj"><%= link_to "Return to projects", projects_path %></p>
   <hr>
+  <p> <% if is_admin? %>
   <p class="admin"><%= link_to "Admin project Edit", edit_project_path(@project)%></p>
   <p class= "admin"><%= link_to "Admin project Delete", project_path(@project),
                            :data => {:confirm => "You sure?",
-                                     :method => "delete"} %></p>
+                                     :method => "delete"} %>
+      <%end %>
+  </p>
 </div>

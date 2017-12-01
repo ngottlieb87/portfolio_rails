@@ -3,17 +3,18 @@
   <h1 class="projectName"><%= @project.title %></h1>
   <div class="card">
      <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
-     <h3><%= link_to "Add a comment for this project!", new_project_comment_path(@project)%></h3>
   </div>
   <div class="displaycomment">
     <% if @project.comments.any? %>
+    <h3 id="addComment"><%= link_to "Add a comment for this project!", new_project_comment_path(@project)%></h3>
+    <hr>
        <% @project.comments.each do |comment| %>
        <p><%= comment.body %> <p>
        comment by: <%= comment.user.user_name %>
       <hr>
       <p> <% if is_admin? %>
       <p class="admin"><%= link_to "Edit Comment", edit_project_comment_path(comment)%></p>
-      <p class= "admin"><%= link_to "Delete Comment",project_path(comment),
+      <p class= "admin"><%= link_to "Delete Comment", project_comment_path(comment.id),
                                :data => {:confirm => "You sure?",
                                          :method => "delete"} %>
           <%end %>

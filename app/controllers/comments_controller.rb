@@ -34,14 +34,14 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = comment.find(params[:id])
+    @comment = Comment.find(params[:id])
     @comment.destroy
     flash[:alert] = "Comment Deleted"
-    redirect_to comment_path(@comment.project_id)
+    redirect_to project_path
   end
 
   private
     def comment_params
-      params.require(:comment).permit(:body, :user_id)
+      params.require(:comment).permit(:body, :user_id, :project_id)
     end
 end

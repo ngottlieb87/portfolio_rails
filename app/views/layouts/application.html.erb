@@ -15,9 +15,10 @@
       <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin', id: "signin" %>
     <% end %>
 
+    <div class='container'>
     <%= flash[:alert] %>
     <%= flash[:notice] %>
-    <div class='container'>
+    <br>
       <%= yield %>
     </div>
   </body>

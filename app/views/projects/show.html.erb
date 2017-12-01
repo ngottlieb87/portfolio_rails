@@ -14,7 +14,7 @@
       <hr>
       <p> <% if is_admin? %>
       <p class="admin"><%= link_to "Edit Comment", edit_project_comment_path(comment)%></p>
-      <p class= "admin"><%= link_to "Delete Comment", project_comment_path(comment.id),
+      <p class= "admin"><%= link_to "Delete Comment", project_comment_path(@project, comment),
                                :data => {:confirm => "You sure?",
                                          :method => "delete"} %>
           <%end %>

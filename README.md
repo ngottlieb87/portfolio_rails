@@ -13,6 +13,9 @@ This project demonstrates my strengths as a developing junior programmer. Over t
 ##### As a person
   * One of my passions is `cooking!` I love to push myself and find new recipes to conquer and more often than not they end up being delicious. I following steps that allow me improvise on them and create something unique that i can share with friends. Not too different from programming! One of the sites that i love to go to to get inspiration is [`Cooks Illustrated`](https://www.cooksillustrated.com/). You have to have an account to access their recipes but they still have great information that is accessible.
 
+  * Growing up in Portland it is hard to not love the outdoors. I grew up with Boy Scouts being a large part of my life. I learned a lot about self-reliance and being mindful of others and my environment. One of my favorite camping spots is on the Oregon coast. [`Camp Meriwether`](https://www.google.com/maps/place/Camp+Meriwether,+BSA/@45.3214613,-123.9549091,15z/data=!4m12!1m6!3m5!1s0x0:0xedf96648c1db171f!2sCamp+Meriwether!8m2!3d45.3275865!4d-123.9426353!3m4!1s0x54ead91d9de70711:0x7f8afdebe998adb3!8m2!3d45.3169542!4d-123.9624926) was one of my favorites! Outside of the scouts i love hiking the in the Mt. Hood area. Heres one of my favorite pictures from my hikes.
+
+  ![Picture From Huckleberry Mt.](app/assets/images/huckleberry.jpg)
 
 ## Setup
 

@@ -1,0 +1,23 @@
+
+<div class ="card commentBody">
+  <h1 class="projectName"><%= @project.title %></h1>
+  <div class="card">
+     <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
+  </div>
+  <div class="displaycomment">
+    <% if @project.comments.any? %>
+       <% @project.comments.each do |comment| %>
+       comment by: <%= comment.user.user_name %>
+      <hr>
+    <% end %>
+    <% else %>
+      <p>There are no comments yet for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
+    <% end %>
+  </div>
+  <p id= "returnProj"><%= link_to "Return to projects", projects_path %></p>
+  <hr>
+  <p class="admin"><%= link_to "Admin project Edit", edit_project_path(@project)%></p>
+  <p class= "admin"><%= link_to "Admin project Delete", project_path(@project),
+                           :data => {:confirm => "You sure?",
+                                     :method => "delete"} %></p>
+</div>

@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  # before_action :authorize, only: [:index]
+  before_action :authorize, only: [:index, :show]
   before_action :authorize_admin, only: [:new, :create, :edit, :update, :destroy]
 
   def index

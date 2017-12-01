@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration[5.1]
     t.column :user_id, :integer
     t.column :project_id, :integer
     t.column :body, :string
-
+  
     t.timestamps
     end
   end

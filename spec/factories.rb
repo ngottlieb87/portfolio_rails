@@ -7,9 +7,9 @@ FactoryBot.define do
   end
 
   factory(:admin, class: User) do
-    user_name('craig')
+    user_name('wilma')
     email('c@d.com')
-    password('password1')
+    password('password4')
     admin(true)
   end
 
@@ -18,7 +18,8 @@ FactoryBot.define do
     project_link('https://www.google.com')
   end
 
-  factory(:question_edit, class: Project) do
+  factory(:project_edit, class: Project) do
+    user_id { FactoryBot.create(:admin).id}
     title('Test2')
     project_link('https://www.amazon.com')
   end

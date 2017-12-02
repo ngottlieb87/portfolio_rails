@@ -22,7 +22,9 @@ This project demonstrates my strengths as a developing junior programmer. Over t
 
   ![Picture From Huckleberry Mt.](app/assets/images/huckleberry.jpg)
 
-
+## What My Portfolio Will Display After Day 1
+  I took it upon myself to create authenticated routes using for admins and users will be able to log in view my portfolio pages. In the future i will add styling, voting system for users to vote on which projects they like and which they don't, an email system to reach me, and paperclip to add images for users to use as avatars and to upload images of my projects to start.
+  
 ## Setup
 
 1. open terminal navigate to desired download location (ex. `cd desktop`) and enter: </br>`git clone https://github.com/ngottlieb87/marios_specialty_foods`

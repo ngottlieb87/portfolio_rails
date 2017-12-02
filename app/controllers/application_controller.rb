@@ -17,15 +17,15 @@ class ApplicationController < ActionController::Base
 
   def authorize
     if !current_user
-      flash[:alert] = 'Please Sign in to view this page'
-      redirect_to '/'
+      flash[:alert] = 'Please Sign in Comment'
+      redirect_to projects_path
     end
   end
 
   def authorize_admin
     if !current_user.admin
       flash[:alert] = 'You are not an Admin!'
-      redirect_to '/'
+      redirect_to projects_path
     end
   end
 end

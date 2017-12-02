@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = "You've successfully signed up!"
       session[:user_id] = @user.id
-      redirect_to projects_path
+      redirect_to "/"
     else
       flash[:alert] = "There was a problem signing up."
       redirect_to '/signup'
@@ -19,6 +19,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:user_name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:user_name, :email,:admin, :password, :password_confirmation)
   end
 end

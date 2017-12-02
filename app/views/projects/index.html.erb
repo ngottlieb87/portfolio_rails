@@ -13,7 +13,9 @@
     </div>
   </div>
 <% end %>
+<% if is_admin? %>
   <h3><%= link_to "Add new project", new_project_path %></h3>
+<% end %>
 <% else %>
 <div class= 'card'>
   <div class = 'card-body'>

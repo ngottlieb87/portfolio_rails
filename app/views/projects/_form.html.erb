@@ -7,10 +7,11 @@
       <%= f.text_field :title, :class => "form-control" %>
       <%= f.label :project_link, :class => "form_title" %>
       <%= f.text_field :project_link, :class => "form-control", :id=>"project_link" %>
-      <%= f.file_field :photo %>
+      <br>
+      <%= f.file_field :photo, :class => "form-control" %>
       <%= f.hidden_field(:user_id, :value => current_user.id) %>
       <span class="input-group-btn">
-        <%= f.submit :class => "btn btn-primary"%>
+        <%= f.submit :class => "btn btn-primary form-control" %>
       </span>
     </div>
   </div>

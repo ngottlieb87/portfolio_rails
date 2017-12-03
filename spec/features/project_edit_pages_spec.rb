@@ -25,6 +25,7 @@ describe 'test for admin proccesses' do
     fill_in 'Title', :with => ''
     fill_in 'project_link', :with => ''
     click_on 'Update Project'
+    save_and_open_page
     expect(page).to have_content "Edit Project"
   end
 end

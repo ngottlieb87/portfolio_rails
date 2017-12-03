@@ -16,6 +16,7 @@ FactoryBot.define do
   factory(:project) do
     title('Test')
     project_link('https://www.google.com')
+    photo("doctorapi.png")
   end
 
   factory(:project_edit, class: Project) do

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/portfolio_rails/spec/features/add_users_pages_spec.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/features/add_users_pages_spec.rb": [
         1,
         null,
         1,
@@ -19,7 +19,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/spec/rails_helper.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -86,14 +86,14 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/environment.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/application.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/application.rb": [
         1,
         null,
         1,
@@ -126,12 +126,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/boot.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/environments/test.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/environments/test.rb": [
         1,
         null,
         null,
@@ -175,7 +175,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/application_controller_renderer.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -185,7 +185,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/assets.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -201,7 +201,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/backtrace_silencers.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -210,20 +210,20 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/cookies_serializer.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/cookies_serializer.rb": [
         null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/inflections.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -241,13 +241,13 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/mime_types.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/initializers/wrap_parameters.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -263,115 +263,133 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/channels/application_cable/channel.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/config/routes.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        43,
+        37,
+        null,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null,
+        1,
+        4,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        4,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/channels/application_cable/channel.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/channels/application_cable/connection.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/channels/application_cable/connection.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/controllers/application_controller.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/controllers/comments_controller.rb": [
         1,
         1,
         1,
         1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
-        31,
-        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
         null,
         null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/controllers/projects_controller.rb": [
+        1,
+        1,
+        1,
         null,
         1,
         4,
         null,
         null,
         1,
-        3,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        2,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/app/controllers/comments_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/app/controllers/projects_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        3,
-        null,
-        null,
-        1,
         0,
         null,
         null,
@@ -394,12 +412,12 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        2,
+        2,
+        1,
+        1,
         null,
-        0,
+        1,
         null,
         null,
         null,
@@ -412,11 +430,11 @@
         null,
         1,
         1,
-        0,
+        2,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/controllers/sessions_controller.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/controllers/sessions_controller.rb": [
         1,
         1,
         2,
@@ -437,7 +455,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/controllers/users_controller.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -463,34 +481,39 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/jobs/application_job.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/jobs/application_job.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/app/models/comment.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/models/project.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/models/comment.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/app/models/user.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/models/project.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/noahgottlieb/Desktop/portforlio_rails/app/models/user.rb": [
         1,
         null,
         1,
@@ -514,7 +537,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/spec/factories.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/factories.rb": [
         1,
         null,
         1,
@@ -530,6 +553,7 @@
         1,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -542,25 +566,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/config/routes.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/portfolio_rails/spec/features/project_edit_pages_spec.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/features/project_edit_pages_spec.rb": [
         1,
         null,
         1,
@@ -573,8 +579,8 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -587,12 +593,13 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/spec/models/comment_spec.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/models/comment_spec.rb": [
         1,
         null,
         1,
@@ -600,7 +607,7 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/portfolio_rails/spec/models/project_spec.rb": [
+      "/Users/noahgottlieb/Desktop/portforlio_rails/spec/models/project_spec.rb": [
         1,
         null,
         1,
@@ -609,6 +616,6 @@
         null
       ]
     },
-    "timestamp": 1512176089
+    "timestamp": 1512343302
   }
 }

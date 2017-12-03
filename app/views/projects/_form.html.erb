@@ -6,7 +6,7 @@
       <%= f.label :title, :class => "form_title" %>
       <%= f.text_field :title, :class => "form-control" %>
       <%= f.label :project_link, :class => "form_title" %>
-      <%= f.text_field :project_link, :class => "form-control" %>
+      <%= f.text_field :project_link, :class => "form-control", :id=>"project_link" %>
       <%= f.file_field :photo %>
       <%= f.hidden_field(:user_id, :value => current_user.id) %>
       <span class="input-group-btn">

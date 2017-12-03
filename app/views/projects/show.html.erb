@@ -2,7 +2,10 @@
 <div class ="card commentBody">
   <h1 class="projectName"><%= @project.title %></h1>
   <div class="card">
+    <div class= "card-body">
+    <%= image_tag @project.photo.url(:medium) %>
      <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
+    </div>
   </div>
   <div class="displaycomment">
     <% if @project.comments.any? %>

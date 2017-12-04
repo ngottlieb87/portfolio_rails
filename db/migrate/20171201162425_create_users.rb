@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.column :admin, :boolean, default: false
       t.column :password_hash, :string
       t.column :password_salt, :string
-
+      
       t.timestamps
     end
   end

@@ -2,11 +2,11 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    binding.pry
   end
 
   def create
     @user = User.new(user_params)
+    binding.pry
     if @user.save
       flash[:notice] = "You've successfully signed up!"
       session[:user_id] = @user.id
@@ -20,6 +20,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:user_name, :email, :admin, :password, :password_confirmation, :avatar)
+    params.require(:user).permit(:user_name, :avatar, :email, :admin, :password, :password_confirmation)
   end
 end

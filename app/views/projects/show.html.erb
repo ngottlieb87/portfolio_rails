@@ -14,6 +14,7 @@
        <% @project.comments.each do |comment| %>
        <p><%= comment.body %> <p>
        comment by: <%= comment.user.user_name %>
+                   <%= image_tag comment.user.avatar.url(:small) %>
       <hr>
       <p> <% if is_admin? %>
       <p class="admin"><%= link_to "Edit Comment", edit_project_comment_path(@project, comment)%></p>
@@ -24,7 +25,7 @@
       </p>
     <% end %>
     <% else %>
-      <p>There are no comments yet for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
+      <p>There are no comments for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
     <% end %>
   </div>
   <p id= "returnProj"><%= link_to "Return to projects", projects_path %></p>

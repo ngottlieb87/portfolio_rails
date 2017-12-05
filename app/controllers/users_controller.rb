@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    binding.pry
     if @user.save
       flash[:notice] = "You've successfully signed up!"
       session[:user_id] = @user.id

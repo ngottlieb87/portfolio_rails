@@ -7,7 +7,7 @@
      <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
     </div>
   </div>
-  <div class="displaycomment">
+  <div class="displayComment">
     <% if @project.comments.any? %>
     <h3 id="addComment"><%= link_to "Add a comment for this project!", new_project_comment_path(@project)%></h3>
     <hr>

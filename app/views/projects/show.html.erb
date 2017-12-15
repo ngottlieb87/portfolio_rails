@@ -9,7 +9,7 @@
   </div>
   <div class="displayComment">
     <% if @project.comments.any? %>
-    <h3 id="addComment"><%= link_to "Add a comment for this project!", new_project_comment_path(@project)%></h3>
+    <h3 class= "addComment"><%= link_to "Add a comment for this project!", new_project_comment_path(@project), remote: true%></h3>
     <hr>
        <% @project.comments.each do |comment| %>
        <p><%= comment.body %> <p>
@@ -25,7 +25,7 @@
     <hr>
     <% end %>
     <% else %>
-      <p>There are no comments for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
+      <p class= "addComment">There are no comments for this project. <%= link_to "Add One!", new_project_comment_path(@project), remote: true%><p>
     <% end %>
   </div>
   <p id= "returnProj"><%= link_to "Return to Projects", projects_path %></p>

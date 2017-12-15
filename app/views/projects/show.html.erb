@@ -1,10 +1,10 @@
 
-<div class ="card commentBody">
+
   <h1 class="projectName"><%= @project.title %></h1>
   <div class="card">
     <div class= "card-body">
     <%= image_tag @project.photo.url(:medium) %>
-     <a href= <%= @project.project_link %> <p> My Project Repository</p> </a>
+     <a href= <%= @project.project_link %> <p>Project Repository</p> </a>
     </div>
   </div>
   <div class="displayComment">
@@ -28,6 +28,6 @@
       <p>There are no comments for this project. <%= link_to "Add One!", new_project_comment_path(@project)%><p>
     <% end %>
   </div>
-  <p id= "returnProj"><%= link_to "Return to projects", projects_path %></p>
   <hr>
-</div>
+  <p id= "returnProj"><%= link_to "Return to Projects", projects_path %></p>
+  <hr>

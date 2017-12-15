@@ -13,7 +13,7 @@
       <% if current_user %>
         <%= current_user.email %> | <%= link_to "Sign out", '/signout', id: "signout" %>
       <% else %>
-        <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin', id: "signin" %>
+        <%= link_to "Sign up", 'signup', id:'sign_up_link', remote: true %> | <%= link_to "Sign in", '/signin', id:'sign_in_link', remote: true %>
       <% end %>
 
       <%= flash[:alert] %>

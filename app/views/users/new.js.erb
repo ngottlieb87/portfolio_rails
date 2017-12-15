@@ -1,1 +1,3 @@
-$('#sign_up_link').hide().after('<%= j render("form") %>');
+$('#sign_up_link').after('<%= j render("form") %>').slideToggle(800);
+$('#sign_up').hide();
+$('#pipe').hide();

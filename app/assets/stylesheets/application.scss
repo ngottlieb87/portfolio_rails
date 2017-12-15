@@ -47,8 +47,19 @@
 }
 
 #sign_in_button{
-  text-align: center;
   margin-top: 20px;
-  justify-content: center;
-  width: 50%;
+  display: table;
+
+}
+
+#signin_title{
+  text-align: center;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+.image-upload > label{
+  cursor:pointer;
 }

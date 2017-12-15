@@ -18,17 +18,37 @@
 .user_image{
   border-radius: 40px;
 }
+
 #addComment{
   text-align: center;
 }
+
 .displayComment{
   margin: 40px;
 }
+
 #returnProj {
   text-align: center;
   font-size: 25px;
 }
+
 .commentBody{
   padding: 50px;
   margin-bottom: -20px;
+}
+
+.back{
+  text-align: center;
+  font-size: 25px;
+}
+
+.sign_in_card{
+  padding: 50px;
+}
+
+#sign_in_button{
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  width: 50%;
 }

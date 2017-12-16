@@ -15,21 +15,32 @@
  */
  @import "bootstrap";
 
-.user_image{
-  border-radius: 40px;
+#sign_in_button{
+  margin-top: 20px;
+  display: table;
+
 }
 
-#addComment{
+#signin_title{
   text-align: center;
-}
-
-.displayComment{
-  margin: 40px;
 }
 
 #returnProj {
   text-align: center;
   font-size: 25px;
+}
+
+.addComment{
+  text-align: center;
+}
+
+.user_image{
+  border-radius: 40px;
+  width: 5%
+}
+
+.displayComment{
+  margin: 40px;
 }
 
 .commentBody{
@@ -44,22 +55,4 @@
 
 .sign_in_card{
   padding: 50px;
-}
-
-#sign_in_button{
-  margin-top: 20px;
-  display: table;
-
-}
-
-#signin_title{
-  text-align: center;
-}
-
-.image-upload > input
-{
-    display: none;
-}
-.image-upload > label{
-  cursor:pointer;
 }

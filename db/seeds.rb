@@ -12,13 +12,13 @@ end
 p "Created #{User.count} users"
 
 project_list = [
-  [1, "Pinelow Zoo", "https://github.com/ngottlieb87/PinelowZoo"],
-  [1, "Doctor API", "https://github.com/ngottlieb87/doctorApi"]
+  [1, "Pinelow Zoo", "https://github.com/ngottlieb87/PinelowZoo", "Angular project for zoo employees to add and update information for their animals"],
+  [1, "Doctor API", "https://github.com/ngottlieb87/doctorApi", "Javascript project using open doctor api to allow users to find the right doctor for them."]
 
   ]
 
-project_list.each do |id, title, link|
-  Project.create!( user_id: id, title: title, project_link: link )
+project_list.each do |id, title, link, description|
+  Project.create!( user_id: id, title: title, project_link: link,  description: description)
 end
 
 p "Created #{Project.count} projects"

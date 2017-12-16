@@ -7,6 +7,7 @@
   <div class='card'>
     <div class='card-body'>
       <h3>Project: <%= project.title %></h3>
+      <h5>Description: <%= project.description %></h5>
       <p><%= link_to image_tag(project.photo.url(:medium)), project_path(project) %></p>
       <p><% if is_admin? %>
       <%= link_to "Edit", edit_project_path(project) %> |
